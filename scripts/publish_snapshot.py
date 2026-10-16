@@ -24,9 +24,13 @@ def main():
             data=json.dumps(body).encode() if body is not None else None,
             method=method or ("POST" if body is not None else "GET"),
             headers={"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json","User-Agent":"SEA-Radar/0.1"})
-        with urlopen(request,timeout=60) as response:
-            raw=response.read()
-            return json.loads(raw) if raw else {}
+        try:
+            with urlopen(request,timeout=60) as response:
+                raw=response.read()
+                return json.loads(raw) if raw else {}
+        except HTTPError as error:
+            error.radar_operation=f"GitHub {request.method} {path}"
+            raise
     try:
         old=api("/git/ref/heads/gh-pages")["object"]["sha"]
     except HTTPError as e:
@@ -52,4 +56,4 @@ def main():
 
 if __name__ == "__main__":
     try:main()
-    except HTTPError as e:raise SystemExit(f"GitHub publication HTTP {e.code}; credentials omitted") from None
+    except HTTPError as e:raise SystemExit(f"{getattr(e,'radar_operation','GitHub publication')} HTTP {e.code}; credentials omitted") from None

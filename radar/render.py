@@ -18,13 +18,15 @@ def figures(snapshot):
         margin=dict(l=65,r=30,t=80,b=65),height=510)
     bubble = go.Figure()
     valid = [g for g in snapshot["groups"] if g["growth7"] is not None and g["competition_proxy"] is not None]
-    for country,color in PALETTE.items():
-        rows = [g for g in valid if g["country"] == country]
-        if rows:
-            bubble.add_trace(go.Scatter(x=[g["competition_proxy"] for g in rows],y=[g["growth7"]*100 for g in rows],
-                mode="markers+text",text=[g["label"] for g in rows],textposition="top center",name=country,
-                marker=dict(color=color,size=[14+min(35,g["sample_products"]*2) for g in rows],opacity=.8)))
+    symbols = {"storage":"circle","kitchen":"diamond","pets":"square"}
+    for group in valid:
+        bubble.add_trace(go.Scatter(x=[group["competition_proxy"]],y=[group["growth7"]*100],
+            mode="markers",name=f'{group["country"]} / {group["label"]} · n={group["sample_products"]} · {group["confidence"]}',
+            marker=dict(color=PALETTE[group["country"]],symbol=symbols.get(group["niche"],"circle"),
+                size=14+min(35,group["sample_products"]*2),opacity=.8)))
     bubble.update_layout(**theme,title="Sample opportunity map / matched 7-day growth",xaxis_title="Observed sellers / sampled listings (proxy)",yaxis_title="Matched counter growth (%)")
+    bubble.update_layout(margin=dict(l=65,r=360,t=80,b=65),legend=dict(font=dict(size=11),y=1,x=1.02))
+    bubble.update_xaxes(range=[-.05,1.05])
     if not valid:
         bubble.update_xaxes(visible=False)
         bubble.update_yaxes(visible=False)
@@ -45,7 +47,7 @@ def figures(snapshot):
         trend.add_annotation(text="Waiting for the first real collection",xref="paper",yref="paper",x=.5,y=.5,showarrow=False,font=dict(size=18))
     if snapshot["synthetic"]:
         for fig in (bubble,heat,trend):
-            fig.add_annotation(text="SYNTHETIC DEMO — NOT MARKET EVIDENCE",xref="paper",yref="paper",x=.5,y=1.12,showarrow=False,font=dict(color="#f6bd70",size=13))
+            fig.add_annotation(text="SYNTHETIC DEMO — NOT MARKET EVIDENCE",xref="paper",yref="paper",x=0,y=1.055,xanchor="left",showarrow=False,font=dict(color="#f6bd70",size=12))
     return {"opportunity":bubble,"coverage":heat,"trends":trend}
 
 

@@ -4,14 +4,14 @@ Engineering tests use synthetic fixtures and mocked API responses. They do not e
 
 | Milestone | Evidence required | Initial status |
 |---|---|---|
-| Parsing, budget and replay integrity | Automated tests including rounded counts, exact date pairs, resets, vendor changes and ambiguous starts | 32 local automated tests passed on 2026-10-16; mocked providers only |
+| Parsing, budget and replay integrity | Automated tests including rounded counts, exact date pairs, resets, vendor changes and ambiguous starts | 32 tests passed locally and on GitHub-hosted Ubuntu on 2026-10-16 |
 | Prediction workflow | Chronological maturity purges, baseline comparison, synthetic end-to-end evaluation | Synthetic notebook executed sequentially locally; hosted Colab execution and real model performance remain unverified |
-| Agent workflow | Actual LangGraph execution with mocked tool-calling model, five-call cap, invalid evidence rejection | Mocked integration tested; live API pending key |
+| Agent workflow | Actual LangGraph execution with mocked tool-calling model, five-call cap, invalid evidence rejection | Mocked integration tested; first live run used rules because its Gemini secret was unavailable at start |
 | Dashboard and images | Browser interaction checks and PNG inspection | Local PNG export passed; deployed browser interaction checks pending |
-| GitHub publication | Verified public source and Pages deployment | Verify deployment run |
-| Real MY/TH/VN samples | Private vendor run IDs, correct schema and public timestamps | User reports all three Secrets saved; live smoke tests pending |
+| GitHub publication | Verified public source and Pages deployment | Source, tests and initial Pages deployment succeeded; first daily snapshot publication returned HTTP 403 and awaits Token scope correction |
+| Real MY/TH/VN samples | Private vendor run IDs, correct schema and public timestamps | First manual cloud collection on 2026-10-16 returned 27 accepted records: 9 per market and 3 per market/category query; raw snapshots and budget ledger saved privately |
 | Three daily unattended runs | Three distinct scheduled dates with successful country-level results | Pending elapsed scheduled runs |
-| Real forecast performance | 84 dates, 500 mature labels, held-out errors | Not eligible; no validated live history yet |
+| Real forecast performance | 84 dates, 500 mature labels, held-out errors | Not eligible; one real observation date so far |
 | Efficiency gain | Ten accepted paired manual/automated timings | Not measured |
 | Brand incubation / sales loop | Real brand, listing, campaign and sales records | Outside this first research-system delivery |
 

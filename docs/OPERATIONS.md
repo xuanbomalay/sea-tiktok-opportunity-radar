@@ -20,6 +20,8 @@ In the **private repository → Settings → Secrets and variables → Actions**
 
 A GitHub connector login is not automatically a credential that a scheduled GitHub Action can reuse. The narrowly scoped publication token is needed for the private-to-public handoff. Account owners must complete account/terms/security checks and enter secrets in the service's protected UI. Configure token expiry and replace an expired secret; no credentials are kept in source control.
 
+The publication Token's selected repository is the **public `sea-tiktok-opportunity-radar`**. Its Secret is stored in the **private `sea-tiktok-radar-data`**. These are intentionally different: the private workflow needs permission to write the public destination. Selecting only the private repository in the Token settings causes publication HTTP 403 even when Contents has read/write access.
+
 ## First live run
 
 1. Set the private secrets and confirm Pages is configured.
@@ -48,6 +50,7 @@ The schedule is 01:23 UTC / 09:23 Asia/Shanghai. GitHub may delay scheduled runs
 - `schema_error`: inspect the private raw envelope, update only the relevant adapter and contract fixture, rerun tests, then reconcile/replay the saved envelope.
 - `budget_exhausted` / `daily_budget_exhausted`: preserve last good data and wait for reset. No automatic paid upgrade.
 - Expired publication token: collection history remains private and checkpointed; renew the scoped token and rerun publication.
+- Publication HTTP 403: check the Token's selected public repository and Contents read/write permission. Editing the original Token's permissions does not require a new Secret value; regenerating the Token does. Error logs identify the failed HTTP operation without printing credentials.
 - Rendering failure: no new partial directory is published; the current public site remains available.
 
 To stop collection, disable the private workflow in GitHub Actions. The existing public page remains readable and will show stale observation timestamps. GitHub's normal notification preferences govern workflow failure notifications; this project sends no email or chat messages itself.
