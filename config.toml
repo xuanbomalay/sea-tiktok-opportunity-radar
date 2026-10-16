@@ -1,0 +1,40 @@
+[collection]
+countries = ["MY", "TH", "VN"]
+results_per_query = 3
+monthly_results = 1000
+monthly_usd = 4.0
+daily_results = 27
+primary_actor = "coregent/tiktok-shop-product-scraper"
+fallback_actor = "tictechid/vanzi-tiktok-shop"
+primary_usd_per_result = 0.004
+fallback_usd_per_result = 0.004
+poll_seconds = 5
+timeout_seconds = 240
+
+[model]
+minimum_dates = 84
+minimum_labels = 500
+horizon_days = 7
+seed = 42
+
+[agent]
+model = "gemini-3.5-flash-lite"
+max_calls = 5
+
+[queries.storage]
+label = "Home storage"
+MY = "kotak penyimpanan"
+TH = "กล่องเก็บของ"
+VN = "hộp đựng đồ"
+
+[queries.kitchen]
+label = "Kitchen tools"
+MY = "alat dapur"
+TH = "อุปกรณ์ครัว"
+VN = "dụng cụ nhà bếp"
+
+[queries.pets]
+label = "Pet accessories"
+MY = "aksesori haiwan peliharaan"
+TH = "อุปกรณ์สัตว์เลี้ยง"
+VN = "phụ kiện thú cưng"

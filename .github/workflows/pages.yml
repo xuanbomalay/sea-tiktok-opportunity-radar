@@ -1,0 +1,57 @@
+name: Publish research dashboard
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  repository_dispatch:
+    types: [snapshot-ready]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OMP_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Use the latest published snapshot, or build an honest initial page
+        shell: bash
+        run: |
+          set -euo pipefail
+          ref=$(git ls-remote --heads https://github.com/xuanbomalay/sea-tiktok-opportunity-radar.git gh-pages)
+          if [[ -n "$ref" ]]; then
+            git clone --depth 1 --branch gh-pages https://github.com/xuanbomalay/sea-tiktok-opportunity-radar.git site
+          else
+            pip install -r requirements.lock
+            pip install --no-deps .
+            python -m radar bootstrap --state-dir artifacts/initial-state --output site --no-agent
+            python scripts/make_demo.py
+            python -m radar replay artifacts/synthetic.json --synthetic --state-dir artifacts/demo-state --output site/demo --no-agent
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
