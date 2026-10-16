@@ -25,6 +25,8 @@ def atomic_json(path, value):
 class Store:
     def __init__(self, root):
         self.root = Path(root)
+        if os.environ.get("RADAR_GIT_CHECKPOINT") == "true":
+            self.sync_checkpoint_state()
         self.root.mkdir(parents=True, exist_ok=True)
         self.database = self.root / "ledger.sqlite3"
         with closing(self.connect()) as con:
@@ -41,6 +43,19 @@ class Store:
 
     def connect(self):
         return sqlite3.connect(self.database, timeout=30)
+
+    def sync_checkpoint_state(self):
+        """A workflow rerun must read today's ledger, not its original commit."""
+        repo = self.root.parent
+        if not (repo / ".git").exists() or self.root.name != "private":
+            raise ValueError("checkpoint_repository_invalid")
+        status = subprocess.run(["git","status","--porcelain"],cwd=repo,capture_output=True,timeout=60)
+        if status.returncode or status.stdout.strip():
+            raise ValueError("checkpoint_checkout_not_clean")
+        for args in (["git","fetch","origin","main"], ["git","merge","--ff-only","FETCH_HEAD"]):
+            done = subprocess.run(args,cwd=repo,capture_output=True,timeout=60)
+            if done.returncode:
+                raise ValueError("checkpoint_history_sync_failed")
 
     def checkpoint(self):
         """Persist the budget before an external side effect on ephemeral runners."""

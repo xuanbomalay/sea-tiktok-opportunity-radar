@@ -40,6 +40,7 @@ The schedule is 01:23 UTC / 09:23 Asia/Shanghai. GitHub may delay scheduled runs
 - Preserve conservative reservations for empty, failed and uncertain starts; a rerun cannot reset the budget. Month uses the local scheduled date's calendar month, conservatively separate from the vendor's billing cycle.
 - GET requests retry at most twice for network, 429 and server failures. POST starts are not automatically retried. An unknown start is not sent to another provider.
 - A complete prior query is reused on same-day reruns. Empty/schema-error terminal queries may use the fallback, within the same daily/monthly limits.
+- Private checkout explicitly loads current `main`. Before opening a cloud ledger, the CLI fetches and fast-forwards a clean checkout to current private history. This also protects reruns whose workflow definition originally checked out an older SHA. A dirty or divergent checkout fails before any vendor request.
 - The account's independent usage and data-storage/read costs can reduce free availability before this project's cap; leave the account on its free plan and inspect its billing dashboard.
 
 ## Recovery

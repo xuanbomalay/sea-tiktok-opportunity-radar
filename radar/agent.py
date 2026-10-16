@@ -27,7 +27,7 @@ def facts_for(snapshot):
 
 def report(snapshot, config, *, enabled=True, client=None, on_attempt=None):
     facts = facts_for(snapshot)
-    result = {"state":"rule_based","calls":0,"evidence_ids":list(facts)[:6],
+    result = {"state":"rule_based","calls":0,"evidence_ids":list(facts),
               "next_steps":["collect_history","inspect_coverage"],"trace":[]}
     if not enabled or not facts:
         result["reason"] = "disabled" if not enabled else "no_observations"

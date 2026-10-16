@@ -4,7 +4,7 @@ Engineering tests use synthetic fixtures and mocked API responses. They do not e
 
 | Milestone | Evidence required | Initial status |
 |---|---|---|
-| Parsing, budget and replay integrity | Automated tests including rounded counts, exact date pairs, resets, vendor changes and ambiguous starts | 32 tests passed locally and on GitHub-hosted Ubuntu on 2026-10-16 |
+| Parsing, budget and replay integrity | Automated tests including rounded counts, exact date pairs, resets, vendor changes and ambiguous starts | 33 tests passed locally, including an actual Git repository regression for old-workflow reruns; previous 32-test suite passed on GitHub-hosted Ubuntu on 2026-10-16 |
 | Prediction workflow | Chronological maturity purges, baseline comparison, synthetic end-to-end evaluation | Synthetic notebook executed sequentially locally; hosted Colab execution and real model performance remain unverified |
 | Agent workflow | Actual LangGraph execution with mocked tool-calling model, five-call cap, invalid evidence rejection | Mocked integration tested; first live run used rules because its Gemini secret was unavailable at start |
 | Dashboard and images | Browser interaction checks and PNG inspection | Local PNG export passed; deployed browser interaction checks pending |

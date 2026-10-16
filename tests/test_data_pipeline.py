@@ -1,5 +1,6 @@
 import copy
 import json
+import subprocess
 from pathlib import Path
 import pytest
 from radar.parsing import parse_count,normalize,safe_product_url
@@ -133,3 +134,38 @@ def test_get_failure_resumes_existing_run_without_new_post(tmp_path,config):
     client.recovered=True
     second=collect(store,config,client,now='2026-10-16T02:00:00Z')
     assert second['state']=='ok' and len(client.started)==9
+
+
+def test_workflow_rerun_loads_remote_history_before_budget_or_api(tmp_path,config,monkeypatch):
+    """Reproduce Actions rerunning an old SHA after earlier state commits."""
+    def git(*args,cwd=None):
+        return subprocess.run(['git',*map(str,args)],cwd=cwd,check=True,capture_output=True)
+    remote=tmp_path/'origin.git'
+    writer=tmp_path/'writer';writer.mkdir()
+    git('init','--bare','--initial-branch=main',remote)
+    git('init','--initial-branch=main',cwd=writer)
+    git('config','user.name','Radar test',cwd=writer)
+    git('config','user.email','radar-test@example.invalid',cwd=writer)
+    (writer/'README.md').write_text('Test fixture repository',encoding='utf-8')
+    git('add','README.md',cwd=writer);git('commit','-m','Initial state',cwd=writer)
+    git('remote','add','origin',remote,cwd=writer);git('push','origin','main',cwd=writer)
+    runner=tmp_path/'runner';git('clone',remote,runner)
+    git('config','user.name','Radar test',cwd=runner)
+    git('config','user.email','radar-test@example.invalid',cwd=runner)
+    first_store=Store(writer/'private')
+    first=collect(first_store,config,FakeApify(),now='2026-10-16T01:23:00Z')
+    assert first['state']=='ok'
+    git('add','private',cwd=writer);git('commit','-m','Persist collected history',cwd=writer)
+    git('push','origin','main',cwd=writer)
+    monkeypatch.setenv('RADAR_GIT_CHECKPOINT','true')
+    restored=Store(runner/'private')
+    client=FakeApify()
+    second=collect(restored,config,client,now='2026-10-16T03:00:00Z')
+    assert second['state']=='ok' and client.started==[]
+    assert len(restored.observations())==9
+    assert restored.budget('2026-10')==first['budget']
+    assert all(query['reused'] for query in second['queries'])
+    restored.checkpoint()
+    (runner/'README.md').write_text('Uncommitted work must be preserved',encoding='utf-8')
+    with pytest.raises(ValueError,match='checkpoint_checkout_not_clean'):
+        Store(runner/'private')

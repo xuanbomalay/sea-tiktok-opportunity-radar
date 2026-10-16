@@ -20,6 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: state
+          ref: main
       - name: Load public research code
         uses: actions/checkout@v4
         with:
@@ -53,6 +54,7 @@ jobs:
           RADAR_GIT_CHECKPOINT: 'true'
         run: python -m radar run --state-dir "$GITHUB_WORKSPACE/state/private" --output "$GITHUB_WORKSPACE/site"
       - name: Persist final state even when collection fails
+        id: persist
         if: always()
         working-directory: state
         run: |
@@ -68,7 +70,7 @@ jobs:
           python scripts/make_demo.py
           python -m radar replay artifacts/synthetic.json --synthetic --state-dir artifacts/demo-state --output "$GITHUB_WORKSPACE/site/demo" --no-agent
       - name: Publish validated public outputs
-        if: always() && hashFiles('site/data/latest.json') != ''
+        if: always() && steps.persist.outcome == 'success' && hashFiles('site/data/latest.json') != ''
         working-directory: code
         env:
           RADAR_PUBLISH_TOKEN: ${{ secrets.RADAR_PUBLISH_TOKEN }}
