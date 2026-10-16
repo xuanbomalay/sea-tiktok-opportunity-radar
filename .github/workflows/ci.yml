@@ -22,5 +22,5 @@ jobs:
           cache: pip
       - run: pip install -r requirements.lock
       - run: pip install --no-deps .
-      - run: pytest
+      - run: python -m pytest
       - run: python -m compileall -q radar scripts

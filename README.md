@@ -65,7 +65,7 @@ The command returns exit code 2 for unsuccessful/missing-credential collection a
 python scripts/make_demo.py
 python -m radar replay artifacts/synthetic.json --synthetic --output dist/demo --no-agent
 python -m radar evaluate --synthetic --state-dir artifacts/synthetic-state
-pytest
+python -m pytest
 ```
 
 Live replay accepts the same provenance envelope with `synthetic: false`; see the [Data Card](docs/DATA_CARD.md). The program refuses to mix synthetic and live state.
