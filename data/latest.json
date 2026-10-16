@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-16T08:33:41+00:00",
+  "generated_at": "2026-10-16T08:38:04+00:00",
   "synthetic": false,
   "data_mode": "live",
   "latest_observed_at": "2026-10-16T08:11:46+00:00",
@@ -685,7 +685,7 @@
     }
   ],
   "attempt": {
-    "attempted_at": "2026-10-16T08:33:39+00:00",
+    "attempted_at": "2026-10-16T08:38:02+00:00",
     "scheduled_for": "2026-10-16T09:23:00+08:00",
     "trigger": "workflow_dispatch",
     "state": "ok",
@@ -800,7 +800,9 @@
       "collect_history",
       "inspect_coverage"
     ],
-    "reason": "disabled"
+    "reason": "daily_call_limit",
+    "daily_calls_used": 5,
+    "daily_call_limit": 5
   },
   "operational_acceptance": {
     "manual_cloud_success": true,

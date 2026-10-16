@@ -15,3 +15,5 @@ This report describes sampled public counters, not actual orders or whole-market
 Next checks:
 - Accumulate more matched observations before forecasting.
 - Check missing markets, seller fields and query coverage.
+
+Agent daily call limit reached; this rerun uses the rule-based report without another model request.
