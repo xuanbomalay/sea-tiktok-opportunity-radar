@@ -63,3 +63,24 @@ def test_empty_site_can_be_built_without_fabricated_data(tmp_path,config):
     assert data['summary']['observations']==0
     assert data['products']==[]
     assert not data['synthetic']
+
+
+def test_exhausted_daily_agent_budget_is_visible_without_another_call(tmp_path,monkeypatch):
+    import json
+    import radar.cli as cli
+    from radar.storage import atomic_json,utc_now
+    state=tmp_path/'state'
+    atomic_json(state/'agent_daily_budget.json',{'date':utc_now()[:10],'total_calls':5})
+    monkeypatch.setattr(cli,'report',lambda *a,**k: ({'state':'rule_based','calls':0,'evidence_ids':[],
+        'next_steps':[],'trace':[],'reason':'disabled'},'Rule report.'))
+    captured={}
+    def capture(snapshot,brief,output,**kwargs):
+        captured.update(snapshot=snapshot,brief=brief)
+        return output
+    monkeypatch.setattr(cli,'build_site',capture)
+    assert cli.main(['bootstrap','--state-dir',str(state),'--output',str(tmp_path/'site'),'--no-images'])==0
+    agent=captured['snapshot']['agent']
+    assert agent['reason']=='daily_call_limit'
+    assert agent['calls']==0 and agent['daily_calls_used']==agent['daily_call_limit']==5
+    assert 'without another model request' in captured['brief']
+    assert json.loads((state/'agent_daily_budget.json').read_text())['total_calls']==5

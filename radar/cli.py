@@ -82,6 +82,7 @@ def main(argv=None):
     day = utc_now()[:10]
     digest = hashlib.sha256(json.dumps(records,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
     used = agent_budget.get("total_calls",0) if agent_budget.get("date") == day else 0
+    daily_used = used
     if cache.get("date") == day and cache.get("data_hash") == digest and cache.get("agent",{}).get("state") == "agent_completed":
         agent, brief = cache["agent"], cache["brief"]
     else:
@@ -91,7 +92,13 @@ def main(argv=None):
             atomic_json(budget_path,{"date":day,"total_calls":used+attempt})
             store.checkpoint()
         agent, brief = report(public,bounded,enabled=not args.no_agent and not synthetic and bounded["agent"]["max_calls"]>0,on_attempt=checkpoint_attempt)
+        daily_used = used + agent["calls"]
+        if not args.no_agent and not synthetic and bounded["agent"]["max_calls"] == 0:
+            agent["reason"] = "daily_call_limit"
+            brief += "\nAgent daily call limit reached; this rerun uses the rule-based report without another model request.\n"
         atomic_json(cache_path,{"date":day,"total_calls":used+agent["calls"],"data_hash":digest,"agent":agent,"brief":brief})
+    agent["daily_calls_used"] = daily_used
+    agent["daily_call_limit"] = config["agent"]["max_calls"]
     atomic_json(store.root/"agent_trace.json",agent)
     public["agent"] = {k:v for k,v in agent.items() if k != "trace"}
     output = build_site(public,brief,args.output,export_images=not args.no_images)

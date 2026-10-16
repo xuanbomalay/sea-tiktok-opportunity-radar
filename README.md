@@ -4,7 +4,7 @@ A reproducible Southeast Asia TikTok Shop research system: **daily sampled colle
 
 [Dashboard](https://xuanbomalay.github.io/sea-tiktok-opportunity-radar/) · [Clearly labeled synthetic demo](https://xuanbomalay.github.io/sea-tiktok-opportunity-radar/demo/) · [中文说明](docs/中文学习说明.md) · [Operations](docs/OPERATIONS.md)
 
-> **Research status (2026-10-16):** the first manual cloud collection returned 27 accepted provider records across MY/TH/VN. Source tests and the initial Pages deployment passed; automatic publication of the first live snapshot is pending correction of a GitHub Token permission error. The separate demo uses invented test fixtures, not market evidence. Forecast validation starts only after 84 observation dates and 500 mature labels. No 4x efficiency, brand-incubation, sales or profitability claim is made.
+> **Research status (2026-10-16):** the first manual cloud collection returned 27 accepted provider records across MY/TH/VN; its validated live snapshot was automatically published to GitHub Pages. Same-day reruns reused all nine queries without increasing the acquisition budget. Gemini credentials and live tool calls work; a valid model-generated final selection remains unverified, so today's public brief uses the rule-based fallback. The separate demo uses invented test fixtures, not market evidence. Forecast validation starts only after 84 observation dates and 500 mature labels. No 4x efficiency, brand-incubation, sales or profitability claim is made.
 
 ## What this project demonstrates
 
