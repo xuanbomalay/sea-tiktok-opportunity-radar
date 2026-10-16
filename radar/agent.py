@@ -47,7 +47,7 @@ def report(snapshot, config, *, enabled=True, client=None, on_attempt=None):
                 {"name":"compare_markets","description":"Compare one niche across observed markets.","parameters":{"type":"OBJECT","properties":{"niche":{"type":"STRING"}},"required":["niche"]}},
                 {"name":"inspect_trends","description":"Inspect recent observed trend points.","parameters":{"type":"OBJECT","properties":{"country":{"type":"STRING"}},"required":["country"]}},
                 {"name":"finalize_report","description":"Select verified evidence IDs and next steps for the report.","parameters":{"type":"OBJECT","properties":{
-                    "evidence_ids":{"type":"ARRAY","items":{"type":"STRING"}},
+                    "evidence_ids":{"type":"ARRAY","items":{"type":"STRING","enum":list(facts)}},
                     "next_steps":{"type":"ARRAY","items":{"type":"STRING","enum":list(NEXT_STEPS)}}},"required":["evidence_ids","next_steps"]}},
             ]
             class State(TypedDict):
@@ -63,10 +63,12 @@ def report(snapshot, config, *, enabled=True, client=None, on_attempt=None):
                 result["calls"] = state["calls"]
                 if on_attempt:
                     on_attempt(state["calls"])
+                allowed = ["finalize_report"] if state["calls"] >= min(3,config["agent"]["max_calls"]) else [item["name"] for item in declarations]
                 response = client.models.generate_content(model=config["agent"]["model"], contents=state["contents"],
                     config=types.GenerateContentConfig(temperature=0,max_output_tokens=1200,
                         system_instruction="You are a sampled-market research agent. First inspect tools. Finalize using ONLY evidence IDs returned by tools. Never claim a blue ocean, real sales, brand incubation or efficiency gains. Do not include free-text financial claims. Data are incomplete. Maximum five model turns.",
-                        tools=[types.Tool(function_declarations=declarations)]))
+                        tools=[types.Tool(function_declarations=declarations)],
+                        tool_config=types.ToolConfig(function_calling_config=types.FunctionCallingConfig(mode="ANY",allowed_function_names=allowed))))
                 if not response.candidates or not response.candidates[0].content:
                     return state
                 content = response.candidates[0].content
@@ -91,7 +93,7 @@ def report(snapshot, config, *, enabled=True, client=None, on_attempt=None):
                             payload = {"accepted":True}
                         else:
                             payload = {"error":"invalid_evidence_or_step"}
-                    state["trace"].append({"turn":state["calls"],"tool":fc.name,"accepted":payload.get("accepted")})
+                    state["trace"].append({"turn":state["calls"],"tool":fc.name,"accepted":payload.get("accepted"),"error":payload.get("error")})
                     responses.append(types.Part.from_function_response(name=fc.name,response=payload))
                 if responses:
                     state["contents"].append(types.Content(role="user",parts=responses))

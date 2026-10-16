@@ -42,6 +42,7 @@ def test_invalid_evidence_cannot_publish_model_claims(records,config):
     assert model.calls==5
     assert result['state']=='rule_based'
     assert 'FAKE:4x' not in brief
+    assert all(turn['error']=='invalid_evidence_or_step' for turn in result['trace'])
 
 
 def test_secret_or_raw_metadata_is_rejected(config):
