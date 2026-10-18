@@ -1,10 +1,10 @@
 country,country_name,niche,label,as_of_date,sample_products,unique_products_28d,observed_dates_28d,sample_sellers,seller_coverage,seller_hhi,competition_proxy,matched_products,increment7_proxy,growth7,median_price,currency,confidence
-MY,Malaysia,storage,Home storage,2026-10-17,3,3,2,3,1.0,0.3333333333333333,1.0,0,,,4.0,MYR,low
-MY,Malaysia,kitchen,Kitchen tools,2026-10-17,3,3,2,3,1.0,0.3333333333333333,1.0,0,,,3.5,MYR,low
-MY,Malaysia,pets,Pet accessories,2026-10-17,3,3,2,3,1.0,0.3333333333333333,1.0,0,,,5.44,MYR,low
-TH,Thailand,storage,Home storage,2026-10-17,3,3,2,3,1.0,0.3333333333333333,1.0,0,,,97.0,THB,low
-TH,Thailand,kitchen,Kitchen tools,2026-10-17,3,4,2,3,1.0,0.3333333333333333,1.0,0,,,129.19,THB,low
-TH,Thailand,pets,Pet accessories,2026-10-17,3,3,2,3,1.0,0.3333333333333333,1.0,0,,,93.0,THB,low
-VN,Vietnam,storage,Home storage,2026-10-17,3,3,2,3,1.0,0.3333333333333333,1.0,0,,,56683.0,VND,low
-VN,Vietnam,kitchen,Kitchen tools,2026-10-17,3,3,2,3,1.0,0.3333333333333333,1.0,0,,,119013.0,VND,low
-VN,Vietnam,pets,Pet accessories,2026-10-17,3,4,2,3,1.0,0.3333333333333333,1.0,0,,,29719.0,VND,low
+MY,Malaysia,storage,Home storage,2026-10-18,3,3,3,3,1.0,0.3333333333333333,1.0,0,,,3.27,MYR,low
+MY,Malaysia,kitchen,Kitchen tools,2026-10-18,3,3,3,3,1.0,0.3333333333333333,1.0,0,,,3.4,MYR,low
+MY,Malaysia,pets,Pet accessories,2026-10-18,3,5,3,3,1.0,0.3333333333333333,1.0,0,,,14.0,MYR,low
+TH,Thailand,storage,Home storage,2026-10-18,3,3,3,3,1.0,0.3333333333333333,1.0,0,,,103.0,THB,low
+TH,Thailand,kitchen,Kitchen tools,2026-10-18,3,4,3,3,1.0,0.3333333333333333,1.0,0,,,122.83,THB,low
+TH,Thailand,pets,Pet accessories,2026-10-18,3,3,3,3,1.0,0.3333333333333333,1.0,0,,,86.0,THB,low
+VN,Vietnam,storage,Home storage,2026-10-18,3,3,3,3,1.0,0.3333333333333333,1.0,0,,,58986.0,VND,low
+VN,Vietnam,kitchen,Kitchen tools,2026-10-18,3,3,3,3,1.0,0.3333333333333333,1.0,0,,,121819.0,VND,low
+VN,Vietnam,pets,Pet accessories,2026-10-18,3,4,3,3,1.0,0.3333333333333333,1.0,0,,,28827.0,VND,low
