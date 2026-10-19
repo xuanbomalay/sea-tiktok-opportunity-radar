@@ -8,4 +8,4 @@ This report describes sampled public counters, not actual orders or whole-market
 
 Next checks:
 - Check missing markets, seller fields and query coverage.
-- Accumulate more matched observations before forecasting.
+- Compare validation and test error against the recent-mean baseline.
