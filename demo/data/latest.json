@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23T01:58:47+00:00",
+  "generated_at": "2026-10-24T01:58:47+00:00",
   "synthetic": true,
   "data_mode": "synthetic_demo",
   "latest_observed_at": "2026-04-06T01:23:00+00:00",
@@ -7931,7 +7931,7 @@
   ],
   "attempt": {
     "state": "replayed_synthetic",
-    "attempted_at": "2026-10-23T01:58:46+00:00",
+    "attempted_at": "2026-10-24T01:58:46+00:00",
     "countries": {
       "MY": "replayed",
       "TH": "replayed",
@@ -7949,7 +7949,7 @@
     "selected_model": "ridge",
     "validation_mae": {
       "recent_mean": 5.993827160493828,
-      "ridge": 5.488034806029266,
+      "ridge": 5.488034806029237,
       "gradient_boosting": 6.736984054398408
     },
     "test_metrics": {
@@ -7958,8 +7958,8 @@
         "rmse": 8.205158056758165
       },
       "ridge": {
-        "mae": 7.779721438959396,
-        "rmse": 9.474420520705698
+        "mae": 7.779721438959311,
+        "rmse": 9.474420520705603
       },
       "gradient_boosting": {
         "mae": 12.187212136125591,

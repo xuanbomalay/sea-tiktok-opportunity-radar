@@ -1,10 +1,10 @@
 country,country_name,niche,label,as_of_date,sample_products,unique_products_28d,observed_dates_28d,sample_sellers,seller_coverage,seller_hhi,competition_proxy,matched_products,increment7_proxy,growth7,median_price,currency,confidence
-MY,Malaysia,storage,Home storage,2026-10-23,3,3,8,3,1.0,0.3333333333333333,1.0,0,,,3.36,MYR,low
-MY,Malaysia,kitchen,Kitchen tools,2026-10-23,3,4,8,3,1.0,0.3333333333333333,1.0,0,,,3.5,MYR,low
-MY,Malaysia,pets,Pet accessories,2026-10-23,3,7,8,3,1.0,0.3333333333333333,1.0,0,,,6.12,MYR,low
-TH,Thailand,storage,Home storage,2026-10-23,3,3,8,3,1.0,0.3333333333333333,1.0,0,,,99.0,THB,low
-TH,Thailand,kitchen,Kitchen tools,2026-10-23,3,4,8,3,1.0,0.3333333333333333,1.0,0,,,131.07,THB,low
-TH,Thailand,pets,Pet accessories,2026-10-23,3,3,8,3,1.0,0.3333333333333333,1.0,0,,,90.0,THB,low
-VN,Vietnam,storage,Home storage,2026-10-23,3,3,8,3,1.0,0.3333333333333333,1.0,0,,,54725.0,VND,low
-VN,Vietnam,kitchen,Kitchen tools,2026-10-23,3,5,8,2,1.0,0.5555555555555556,0.6666666666666666,0,,,50801.0,VND,low
-VN,Vietnam,pets,Pet accessories,2026-10-23,3,6,8,3,1.0,0.3333333333333333,1.0,0,,,58545.0,VND,low
+MY,Malaysia,storage,Home storage,2026-10-24,3,3,9,3,1.0,0.3333333333333333,1.0,0,,,3.33,MYR,low
+MY,Malaysia,kitchen,Kitchen tools,2026-10-24,3,4,9,3,1.0,0.3333333333333333,1.0,0,,,3.4,MYR,low
+MY,Malaysia,pets,Pet accessories,2026-10-24,3,7,9,3,1.0,0.3333333333333333,1.0,0,,,6.14,MYR,low
+TH,Thailand,storage,Home storage,2026-10-24,3,3,9,3,1.0,0.3333333333333333,1.0,0,,,105.0,THB,low
+TH,Thailand,kitchen,Kitchen tools,2026-10-24,3,4,9,3,1.0,0.3333333333333333,1.0,0,,,123.8,THB,low
+TH,Thailand,pets,Pet accessories,2026-10-24,3,3,9,3,1.0,0.3333333333333333,1.0,0,,,95.0,THB,low
+VN,Vietnam,storage,Home storage,2026-10-24,3,3,9,3,1.0,0.3333333333333333,1.0,0,,,57033.0,VND,low
+VN,Vietnam,kitchen,Kitchen tools,2026-10-24,3,5,9,2,1.0,0.5555555555555556,0.6666666666666666,0,,,50928.0,VND,low
+VN,Vietnam,pets,Pet accessories,2026-10-24,3,7,9,3,1.0,0.3333333333333333,1.0,0,,,145317.0,VND,low
