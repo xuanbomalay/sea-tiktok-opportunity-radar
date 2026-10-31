@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T02:14:23+00:00",
+  "generated_at": "2026-10-31T02:13:03+00:00",
   "synthetic": false,
   "data_mode": "live",
-  "latest_observed_at": "2026-10-30T02:14:18+00:00",
+  "latest_observed_at": "2026-10-31T02:13:00+00:00",
   "summary": {
-    "observations": 405,
-    "observation_dates": 15,
+    "observations": 432,
+    "observation_dates": 16,
     "markets_observed": 3,
     "latest_sample_products": 27
   },
@@ -27,10 +27,10 @@
       "country_name": "Malaysia",
       "niche": "storage",
       "label": "Home storage",
-      "as_of_date": "2026-10-30",
+      "as_of_date": "2026-10-31",
       "sample_products": 3,
       "unique_products_28d": 3,
-      "observed_dates_28d": 15,
+      "observed_dates_28d": 16,
       "sample_sellers": 3,
       "seller_coverage": 1.0,
       "seller_hhi": 0.3333333333333333,
@@ -38,7 +38,7 @@
       "matched_products": 3,
       "increment7_proxy": 0.0,
       "growth7": null,
-      "median_price": 3.18,
+      "median_price": 3.32,
       "currency": "MYR",
       "confidence": "low"
     },
@@ -47,10 +47,10 @@
       "country_name": "Malaysia",
       "niche": "kitchen",
       "label": "Kitchen tools",
-      "as_of_date": "2026-10-30",
+      "as_of_date": "2026-10-31",
       "sample_products": 3,
       "unique_products_28d": 5,
-      "observed_dates_28d": 15,
+      "observed_dates_28d": 16,
       "sample_sellers": 3,
       "seller_coverage": 1.0,
       "seller_hhi": 0.3333333333333333,
@@ -58,7 +58,7 @@
       "matched_products": 2,
       "increment7_proxy": 0.0,
       "growth7": null,
-      "median_price": 2.55,
+      "median_price": 2.58,
       "currency": "MYR",
       "confidence": "low"
     },
@@ -67,10 +67,10 @@
       "country_name": "Malaysia",
       "niche": "pets",
       "label": "Pet accessories",
-      "as_of_date": "2026-10-30",
+      "as_of_date": "2026-10-31",
       "sample_products": 3,
       "unique_products_28d": 8,
-      "observed_dates_28d": 15,
+      "observed_dates_28d": 16,
       "sample_sellers": 3,
       "seller_coverage": 1.0,
       "seller_hhi": 0.3333333333333333,
@@ -78,7 +78,7 @@
       "matched_products": 2,
       "increment7_proxy": 1.0,
       "growth7": -0.6666666666666667,
-      "median_price": 16.78,
+      "median_price": 9.39,
       "currency": "MYR",
       "confidence": "low"
     },
@@ -87,10 +87,10 @@
       "country_name": "Thailand",
       "niche": "storage",
       "label": "Home storage",
-      "as_of_date": "2026-10-30",
+      "as_of_date": "2026-10-31",
       "sample_products": 3,
       "unique_products_28d": 4,
-      "observed_dates_28d": 15,
+      "observed_dates_28d": 16,
       "sample_sellers": 3,
       "seller_coverage": 1.0,
       "seller_hhi": 0.3333333333333333,
@@ -98,7 +98,7 @@
       "matched_products": 2,
       "increment7_proxy": 0.0,
       "growth7": null,
-      "median_price": 308.78,
+      "median_price": 283.0,
       "currency": "THB",
       "confidence": "low"
     },
@@ -107,10 +107,10 @@
       "country_name": "Thailand",
       "niche": "kitchen",
       "label": "Kitchen tools",
-      "as_of_date": "2026-10-30",
+      "as_of_date": "2026-10-31",
       "sample_products": 3,
       "unique_products_28d": 8,
-      "observed_dates_28d": 15,
+      "observed_dates_28d": 16,
       "sample_sellers": 3,
       "seller_coverage": 1.0,
       "seller_hhi": 0.3333333333333333,
@@ -118,7 +118,7 @@
       "matched_products": 2,
       "increment7_proxy": 0.0,
       "growth7": null,
-      "median_price": 153.7,
+      "median_price": 365.7,
       "currency": "THB",
       "confidence": "low"
     },
@@ -127,10 +127,10 @@
       "country_name": "Thailand",
       "niche": "pets",
       "label": "Pet accessories",
-      "as_of_date": "2026-10-30",
+      "as_of_date": "2026-10-31",
       "sample_products": 3,
       "unique_products_28d": 3,
-      "observed_dates_28d": 15,
+      "observed_dates_28d": 16,
       "sample_sellers": 3,
       "seller_coverage": 1.0,
       "seller_hhi": 0.3333333333333333,
@@ -138,7 +138,7 @@
       "matched_products": 3,
       "increment7_proxy": 0.0,
       "growth7": -1.0,
-      "median_price": 92.0,
+      "median_price": 93.0,
       "currency": "THB",
       "confidence": "low"
     },
@@ -147,10 +147,10 @@
       "country_name": "Vietnam",
       "niche": "storage",
       "label": "Home storage",
-      "as_of_date": "2026-10-30",
+      "as_of_date": "2026-10-31",
       "sample_products": 3,
       "unique_products_28d": 3,
-      "observed_dates_28d": 15,
+      "observed_dates_28d": 16,
       "sample_sellers": 3,
       "seller_coverage": 1.0,
       "seller_hhi": 0.3333333333333333,
@@ -158,7 +158,7 @@
       "matched_products": 3,
       "increment7_proxy": 1.0,
       "growth7": null,
-      "median_price": 57041.0,
+      "median_price": 56185.0,
       "currency": "VND",
       "confidence": "low"
     },
@@ -167,18 +167,18 @@
       "country_name": "Vietnam",
       "niche": "kitchen",
       "label": "Kitchen tools",
-      "as_of_date": "2026-10-30",
+      "as_of_date": "2026-10-31",
       "sample_products": 3,
       "unique_products_28d": 6,
-      "observed_dates_28d": 15,
-      "sample_sellers": 3,
+      "observed_dates_28d": 16,
+      "sample_sellers": 2,
       "seller_coverage": 1.0,
-      "seller_hhi": 0.3333333333333333,
-      "competition_proxy": 1.0,
-      "matched_products": 1,
+      "seller_hhi": 0.5555555555555556,
+      "competition_proxy": 0.6666666666666666,
+      "matched_products": 2,
       "increment7_proxy": 0.0,
       "growth7": null,
-      "median_price": 128685.0,
+      "median_price": 52546.0,
       "currency": "VND",
       "confidence": "low"
     },
@@ -187,18 +187,18 @@
       "country_name": "Vietnam",
       "niche": "pets",
       "label": "Pet accessories",
-      "as_of_date": "2026-10-30",
+      "as_of_date": "2026-10-31",
       "sample_products": 3,
       "unique_products_28d": 8,
-      "observed_dates_28d": 15,
+      "observed_dates_28d": 16,
       "sample_sellers": 3,
       "seller_coverage": 1.0,
       "seller_hhi": 0.3333333333333333,
       "competition_proxy": 1.0,
-      "matched_products": 0,
-      "increment7_proxy": null,
-      "growth7": null,
-      "median_price": 26307.0,
+      "matched_products": 1,
+      "increment7_proxy": 4.0,
+      "growth7": 1.0,
+      "median_price": 29051.0,
       "currency": "VND",
       "confidence": "low"
     }
@@ -326,6 +326,14 @@
     },
     {
       "country": "MY",
+      "niche": "storage",
+      "date": "2026-10-31",
+      "median_price": 3.32,
+      "median_sold_count": 4.0,
+      "sample_products": 3
+    },
+    {
+      "country": "MY",
       "niche": "kitchen",
       "date": "2026-10-16",
       "median_price": 3.5,
@@ -441,6 +449,14 @@
       "niche": "kitchen",
       "date": "2026-10-30",
       "median_price": 2.55,
+      "median_sold_count": 12.0,
+      "sample_products": 3
+    },
+    {
+      "country": "MY",
+      "niche": "kitchen",
+      "date": "2026-10-31",
+      "median_price": 2.58,
       "median_sold_count": 12.0,
       "sample_products": 3
     },
@@ -565,6 +581,14 @@
       "sample_products": 3
     },
     {
+      "country": "MY",
+      "niche": "pets",
+      "date": "2026-10-31",
+      "median_price": 9.39,
+      "median_sold_count": 1.0,
+      "sample_products": 3
+    },
+    {
       "country": "TH",
       "niche": "storage",
       "date": "2026-10-16",
@@ -681,6 +705,14 @@
       "niche": "storage",
       "date": "2026-10-30",
       "median_price": 308.78,
+      "median_sold_count": 0.0,
+      "sample_products": 3
+    },
+    {
+      "country": "TH",
+      "niche": "storage",
+      "date": "2026-10-31",
+      "median_price": 283.0,
       "median_sold_count": 0.0,
       "sample_products": 3
     },
@@ -806,6 +838,14 @@
     },
     {
       "country": "TH",
+      "niche": "kitchen",
+      "date": "2026-10-31",
+      "median_price": 365.7,
+      "median_sold_count": 0.0,
+      "sample_products": 3
+    },
+    {
+      "country": "TH",
       "niche": "pets",
       "date": "2026-10-16",
       "median_price": 92.0,
@@ -921,6 +961,14 @@
       "niche": "pets",
       "date": "2026-10-30",
       "median_price": 92.0,
+      "median_sold_count": 7.0,
+      "sample_products": 3
+    },
+    {
+      "country": "TH",
+      "niche": "pets",
+      "date": "2026-10-31",
+      "median_price": 93.0,
       "median_sold_count": 7.0,
       "sample_products": 3
     },
@@ -1046,6 +1094,14 @@
     },
     {
       "country": "VN",
+      "niche": "storage",
+      "date": "2026-10-31",
+      "median_price": 56185.0,
+      "median_sold_count": 7.0,
+      "sample_products": 3
+    },
+    {
+      "country": "VN",
       "niche": "kitchen",
       "date": "2026-10-16",
       "median_price": 123603.0,
@@ -1162,6 +1218,14 @@
       "date": "2026-10-30",
       "median_price": 128685.0,
       "median_sold_count": 25.0,
+      "sample_products": 3
+    },
+    {
+      "country": "VN",
+      "niche": "kitchen",
+      "date": "2026-10-31",
+      "median_price": 52546.0,
+      "median_sold_count": 159.0,
       "sample_products": 3
     },
     {
@@ -1283,30 +1347,53 @@
       "median_price": 26307.0,
       "median_sold_count": 241.0,
       "sample_products": 3
+    },
+    {
+      "country": "VN",
+      "niche": "pets",
+      "date": "2026-10-31",
+      "median_price": 29051.0,
+      "median_sold_count": 225.0,
+      "sample_products": 3
     }
   ],
   "products": [
     {
       "country": "VN",
       "niche": "pets",
-      "title": "Thiết bị dành cho thú cưng , có đèn led âm thanh hàng full phụ kiện",
-      "product_ref": "274ddf14f7",
-      "price": 210179.0,
+      "title": "phụ kiện gắn nón bảo hiểm ( tai mèo, tai chuột,tai gấu tai cáo )",
+      "product_ref": "b89b1261cb",
+      "price": 29051.0,
+      "currency": "VND",
+      "rating": 4.9,
+      "sold_raw": "720",
+      "sold_precision": "exact",
+      "increment7_proxy": 4.0,
+      "url": "https://shop.tiktok.com/vn/pdp/phu-kien-gan-non-bao-hiem-tai-meo-tai-chuot-tai-gau-tai-cao/1729645573891918367",
+      "source": "coregent/tiktok-shop-product-scraper",
+      "observed_at": "2026-10-31T02:13:00+00:00"
+    },
+    {
+      "country": "VN",
+      "niche": "pets",
+      "title": "Lai ống tre nòi - Phụ kiện đeo chân nòi việt lai cải tiến, thép Mỹ,không kén gà, nạp giỏi bươi hay, bảo hành 1 đổi 1",
+      "product_ref": "06cd4d6118",
+      "price": 142171.0,
       "currency": "VND",
       "rating": 4.7,
-      "sold_raw": "241",
+      "sold_raw": "225",
       "sold_precision": "exact",
-      "increment7_proxy": 49.0,
-      "url": "https://shop.tiktok.com/vn/pdp/1733427916132550033",
+      "increment7_proxy": 3.0,
+      "url": "https://shop.tiktok.com/vn/pdp/phu-kien-cho-meo-cao-cap-thiet-ke-hien-dai-ben-chac/1729796876840307016",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:14:18+00:00"
+      "observed_at": "2026-10-31T02:13:00+00:00"
     },
     {
       "country": "MY",
       "niche": "pets",
       "title": "Aksesori Haiwan Peliharaan, Kolar Permata Anjing, Kalung Mutiara Kucing",
       "product_ref": "b1a84cfe67",
-      "price": 5.8,
+      "price": 6.05,
       "currency": "MYR",
       "rating": 4.9,
       "sold_raw": "895",
@@ -1314,14 +1401,14 @@
       "increment7_proxy": 1.0,
       "url": "https://shop.tiktok.com/my/pdp/aksesori-haiwan-peliharaan-kolar-kalung-untuk-kucing-anjing/1729775348095485119",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:28+00:00"
+      "observed_at": "2026-10-31T02:12:09+00:00"
     },
     {
       "country": "VN",
       "niche": "storage",
       "title": "Hộp đựng đồ bằng vải, combo 2 hộp to nhỏ",
       "product_ref": "f3304d0ca1",
-      "price": 57041.0,
+      "price": 56185.0,
       "currency": "VND",
       "rating": null,
       "sold_raw": "4",
@@ -1329,7 +1416,7 @@
       "increment7_proxy": 1.0,
       "url": "https://shop.tiktok.com/vn/pdp/hop-dung-do-bang-vai-combo-2-hop-lon-nho-ben-dep-tien-loi/1732290304175277672",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:14:01+00:00"
+      "observed_at": "2026-10-31T02:12:42+00:00"
     },
     {
       "country": "MY",
@@ -1344,14 +1431,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/my/pdp/kotak-besar-kosong-untuk-penyimpanan-barang-berharga/1729549146881099497",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:10+00:00"
+      "observed_at": "2026-10-31T02:11:53+00:00"
     },
     {
       "country": "MY",
       "niche": "storage",
       "title": "[Kotak Penyimpanan] [Fast Shipping] Household Multipurpose Desktop Storage Basket Bin Box Organizer With Handle Storage Kotak Simpanan Supplies White",
       "product_ref": "51c9643f29",
-      "price": 3.18,
+      "price": 3.32,
       "currency": "MYR",
       "rating": null,
       "sold_raw": "4",
@@ -1359,14 +1446,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/my/pdp/kotak-penyimpanan-serbaguna-penghantaran-cepat-sesuai-dapur-bilik-tidur-warna-putih/1729627605953841608",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:10+00:00"
+      "observed_at": "2026-10-31T02:11:53+00:00"
     },
     {
       "country": "MY",
       "niche": "storage",
       "title": "Kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan kotak penyimpanan",
       "product_ref": "b16a1c3ffe",
-      "price": 54.3,
+      "price": 56.51,
       "currency": "MYR",
       "rating": null,
       "sold_raw": "0",
@@ -1374,14 +1461,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/my/pdp/kotak-penyimpanan-kalis-air-dilipat-rangka-keluli-mudah/1731035992746723251",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:10+00:00"
+      "observed_at": "2026-10-31T02:11:53+00:00"
     },
     {
       "country": "MY",
       "niche": "kitchen",
       "title": "Multi‑Functional Cooking Tools Kitchen Utensils Kitchen Tools Shovel Spoon Colander Fried Drain Scoop Household",
       "product_ref": "5f1c25baec",
-      "price": 3.4,
+      "price": 3.5,
       "currency": "MYR",
       "rating": null,
       "sold_raw": "0",
@@ -1389,14 +1476,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/my/pdp/set-alat-dapur-pelbagai-fungsi-4-dalam-1-untuk-memasak-mengupas/1729525598313481708",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:19+00:00"
+      "observed_at": "2026-10-31T02:12:00+00:00"
     },
     {
       "country": "MY",
       "niche": "kitchen",
       "title": "Large Scoop Strainer Filter Colander Soup Spoon Cooking Drainer Kitchen Tool Household Heat Resistant Alat Dapur",
       "product_ref": "f759586463",
-      "price": 2.3,
+      "price": 2.4,
       "currency": "MYR",
       "rating": 5.0,
       "sold_raw": "12",
@@ -1404,14 +1491,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/my/pdp/saringan-senduk-besar-alat-dapur-tahan-panas-pegangan-panjang-senang-simpan/1729587084647367841",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:19+00:00"
+      "observed_at": "2026-10-31T02:12:00+00:00"
     },
     {
       "country": "MY",
       "niche": "pets",
       "title": "Set Aksesori Pembersihan Sudu Sampah Kucing, 1 Keping, Kit Penyodok Haiwan Peliharaan, Penapis Najis",
       "product_ref": "f87e82448a",
-      "price": 32.14,
+      "price": 33.55,
       "currency": "MYR",
       "rating": null,
       "sold_raw": "0",
@@ -1419,14 +1506,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/my/pdp/set-aksesori-pembersihan-sudu-sampah-kucing-1-keping/1731277238729017118",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:28+00:00"
+      "observed_at": "2026-10-31T02:12:09+00:00"
     },
     {
       "country": "TH",
       "niche": "storage",
       "title": "กล่องเก็บของ ลิ้นชักเก็บของ",
       "product_ref": "2c7fbb4875",
-      "price": 105.0,
+      "price": 94.0,
       "currency": "THB",
       "rating": 5.0,
       "sold_raw": "5",
@@ -1434,14 +1521,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/th/pdp/klong-ekb-khong-lin-ekb-khong-tham-chak-phlastik-pp-thnthan-si-hlakhlay/1729429689932417653",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:36+00:00"
+      "observed_at": "2026-10-31T02:12:18+00:00"
     },
     {
       "country": "TH",
       "niche": "storage",
       "title": "[COD] 【ซื้อ1แถม1】ตู้เก็บของ กล่องเก็บของพับได้ กล่องเก็บของขนาดใหญ่ 120L Storage Box ใช้ในการเก็บเสื้อผ้าผ้าห่มและของเล่น กล่องเก็บของอเนกประสงค์",
       "product_ref": "751cb3d582",
-      "price": 308.78,
+      "price": 322.08,
       "currency": "THB",
       "rating": null,
       "sold_raw": "0",
@@ -1449,14 +1536,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/th/pdp/klong-ekb-khong-phab-aid-120l-samhrab-ekb-esueopha-phahm-aela-khongeln/1732406568390264194",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:36+00:00"
+      "observed_at": "2026-10-31T02:12:18+00:00"
     },
     {
       "country": "TH",
       "niche": "kitchen",
       "title": "เซตอุปกรณ์ปรุงอาหาร 5 ชิ้น",
       "product_ref": "33379424e3",
-      "price": 589.0,
+      "price": 546.0,
       "currency": "THB",
       "rating": null,
       "sold_raw": "0",
@@ -1464,14 +1551,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/th/pdp/est-oupkrn-thamkhraw-5-chin-saetnels-khunphaph-sung-thnthan-aela-swyngam/1729567778752990197",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:44+00:00"
+      "observed_at": "2026-10-31T02:12:25+00:00"
     },
     {
       "country": "TH",
       "niche": "kitchen",
       "title": "อุปกรณ์จัดเก็บครัวทั้งหมด: ฟองน้ำล้างจาน 5 ชิ้น, ชั้นวางผ้า 3 ชั้น, ชั้นวางฟองน้ำ 2 ชั้น, ตะแกรงระบายน้ำ 1 ชิ้น, ตะกร้าเจลล้างมือ 1 ชิ้น, ที่วางตะเกียบ 1 ชิ้น, ราวแขวนผ้า 3 ชิ้น, ตะแกรงล้างจาน 1 ชิ้น, กล่องเก็บของ 1 ชิ้น ช่วยจัดเก็บครัวสะอาด และประสบผลดี",
       "product_ref": "29943afa00",
-      "price": 153.7,
+      "price": 142.4,
       "currency": "THB",
       "rating": null,
       "sold_raw": "0",
@@ -1479,29 +1566,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/th/pdp/1734476243036439702",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:44+00:00"
-    },
-    {
-      "country": "TH",
-      "niche": "kitchen",
-      "title": "5ชิ้น ชุดอุปกรณ์ครัว (ที่บดมันฝรั่ง+กรองตาข่าย+การแยกไข่แดง+เครื่องปั่นไข่+ช้อนเด็ก) อุปกรณ์ครัว สแตนเลส",
-      "product_ref": "eb0f567fc0",
-      "price": 83.65,
-      "currency": "THB",
-      "rating": null,
-      "sold_raw": "23",
-      "sold_precision": "exact",
-      "increment7_proxy": 0.0,
-      "url": "https://shop.tiktok.com/th/pdp/1735286244991009836",
-      "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:44+00:00"
+      "observed_at": "2026-10-31T02:12:25+00:00"
     },
     {
       "country": "TH",
       "niche": "pets",
       "title": "อุปกรณ์สัตว์เลี้ยง กระบอกใส่น้ำแบบพกพา",
       "product_ref": "bd72118aff",
-      "price": 114.0,
+      "price": 115.0,
       "currency": "THB",
       "rating": null,
       "sold_raw": "7",
@@ -1509,14 +1581,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/th/pdp/oupkrn-satweliyng-krabok-ais-nam-aebb-phkpha-phrom-say-hoy-khwd/1729540549395319641",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:54+00:00"
+      "observed_at": "2026-10-31T02:12:34+00:00"
     },
     {
       "country": "TH",
       "niche": "pets",
       "title": "อุปกรณ์สำหรับป้อนของเหลวเเละยา สำหรับสัตว์เลี้ยง",
       "product_ref": "e3f8e0197a",
-      "price": 28.3,
+      "price": 28.5,
       "currency": "THB",
       "rating": null,
       "sold_raw": "13",
@@ -1524,14 +1596,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/th/pdp/oupkrn-pon-oahar-aela-ya-satweliyng-plodphay-air-sarphis-ehmaasamhrab-aemw-aela-sunakh/1731011006613260769",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:54+00:00"
+      "observed_at": "2026-10-31T02:12:34+00:00"
     },
     {
       "country": "TH",
       "niche": "pets",
       "title": "อุปกรณ์สำหรับสัตว์เลี้ยง/อุปกรณ์สำหรับไก่ขมิ้นทวีชัย/อุปกรณ์สำหรับสัตว์เลี้ยงไก่/นก",
       "product_ref": "7a302ea28b",
-      "price": 92.0,
+      "price": 93.0,
       "currency": "THB",
       "rating": null,
       "sold_raw": "4",
@@ -1539,14 +1611,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/th/pdp/oupkrn-samhrab-satweliyng-aik-khmin-thwi-chay-satweliyng-aik-nk/1734106705026254432",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:54+00:00"
+      "observed_at": "2026-10-31T02:12:34+00:00"
     },
     {
       "country": "VN",
       "niche": "storage",
       "title": "Combo 2 hộp vải khung cứng đựng quần áo, chăn màn, vật dụng cá nhân",
       "product_ref": "b321a7ef93",
-      "price": 55901.0,
+      "price": 55061.0,
       "currency": "VND",
       "rating": 4.0,
       "sold_raw": "36",
@@ -1554,14 +1626,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/vn/pdp/combo-hop-vai-khung-cung-dung-do-da-nang-2-kich-thuoc-sang-trong/1731608787257559392",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:14:01+00:00"
+      "observed_at": "2026-10-31T02:12:42+00:00"
     },
     {
       "country": "VN",
       "niche": "storage",
       "title": "Hộp đựng đồ bằng vải, combo 2 hộp to nhỏ",
       "product_ref": "b78fe8b020",
-      "price": 68450.0,
+      "price": 67422.0,
       "currency": "VND",
       "rating": 5.0,
       "sold_raw": "7",
@@ -1569,14 +1641,44 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/vn/pdp/combo-2-hop-dung-do-bang-vai-day-thiet-ke-tien-loi-ben-bi/1732398462909843027",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:14:01+00:00"
+      "observed_at": "2026-10-31T02:12:42+00:00"
+    },
+    {
+      "country": "VN",
+      "niche": "kitchen",
+      "title": "kéo nhà bếp",
+      "product_ref": "cd8bdc19d3",
+      "price": 38534.0,
+      "currency": "VND",
+      "rating": 5.0,
+      "sold_raw": "377",
+      "sold_precision": "exact",
+      "increment7_proxy": 0.0,
+      "url": "https://shop.tiktok.com/vn/pdp/keo-nha-bep-thep-nhip-thu-cong-luoi-keo-dai-13cm-doc-dao/1729618791175129735",
+      "source": "coregent/tiktok-shop-product-scraper",
+      "observed_at": "2026-10-31T02:12:50+00:00"
+    },
+    {
+      "country": "VN",
+      "niche": "kitchen",
+      "title": "kéo nhà bếp loại to",
+      "product_ref": "d8580ae0c7",
+      "price": 52546.0,
+      "currency": "VND",
+      "rating": 5.0,
+      "sold_raw": "16",
+      "sold_precision": "exact",
+      "increment7_proxy": 0.0,
+      "url": "https://shop.tiktok.com/vn/pdp/keo-nha-bep-loai-to-thu-cong-luoi-keo-nhip-xe-ben-cat-ga-luoc/1729643128165206663",
+      "source": "coregent/tiktok-shop-product-scraper",
+      "observed_at": "2026-10-31T02:12:50+00:00"
     },
     {
       "country": "VN",
       "niche": "kitchen",
       "title": "Bộ dụng cụ dùng trong nhà bếp (1 kéo .1 dao inox .1 thớt 24cm)",
       "product_ref": "1158bab880",
-      "price": 212507.0,
+      "price": 210185.0,
       "currency": "VND",
       "rating": 4.2,
       "sold_raw": "159",
@@ -1584,29 +1686,14 @@
       "increment7_proxy": 0.0,
       "url": "https://shop.tiktok.com/vn/pdp/bo-dung-cu-nha-bep-inox-thot-go-xa-cu-chat-luong-cao/1730341940783516400",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:14:08+00:00"
-    },
-    {
-      "country": "VN",
-      "niche": "pets",
-      "title": "Sét kẹp hello kitty dễ thương",
-      "product_ref": "ebf413d66b",
-      "price": 17048.0,
-      "currency": "VND",
-      "rating": null,
-      "sold_raw": "0",
-      "sold_precision": "exact",
-      "increment7_proxy": 0.0,
-      "url": "https://shop.tiktok.com/vn/pdp/set-kep-toc-hello-kitty-de-thuong-thiet-ke-xinh-xan-tien-dung-hang-ngay/1732116815593571756",
-      "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:14:18+00:00"
+      "observed_at": "2026-10-31T02:12:50+00:00"
     },
     {
       "country": "MY",
       "niche": "kitchen",
       "title": "Borong365 Alat Dapur Heat Resistant Colander Noodles Drainer Large Strainer Food Scoop Scooper Filter Kitchen Tool",
       "product_ref": "7c5408c2d7",
-      "price": 2.55,
+      "price": 2.58,
       "currency": "MYR",
       "rating": 4.6,
       "sold_raw": "57",
@@ -1614,29 +1701,29 @@
       "increment7_proxy": null,
       "url": "https://shop.tiktok.com/my/pdp/alat-dapur-tahan-panas-penyaring-air-makanan-reka-bentuk-ergonomik/1729771777792378399",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:19+00:00"
+      "observed_at": "2026-10-31T02:12:00+00:00"
     },
     {
       "country": "MY",
       "niche": "pets",
-      "title": "Bibir Kencing Haiwan Peliharaan, Siri Krismas, Tuala Air Liur Renda, Boleh Laras, Aksesori Kostum Aksesori Leher Haiwan Peliharaan, 483774",
-      "product_ref": "80bc533271",
-      "price": 16.78,
+      "title": "Aksesori Haiwan Peliharaan, 10 Keping, Loceng Kucing dan Anjing, Loket Kalung Berwarna-warni 14MM, Cangkuk Udang Galah, Loceng Kuat dan Kuat, Sesuai untuk Perayaan",
+      "product_ref": "588b032049",
+      "price": 9.39,
       "currency": "MYR",
       "rating": null,
-      "sold_raw": "0",
+      "sold_raw": "1",
       "sold_precision": "exact",
       "increment7_proxy": null,
-      "url": "https://shop.tiktok.com/my/pdp/bibir-kencing-haiwan-peliharaan-siri-krismas-tuala-air-liur/1733007553693910412",
+      "url": "https://shop.tiktok.com/my/pdp/aksesori-haiwan-peliharaan-10-keping-mudah/1731041279991579996",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:28+00:00"
+      "observed_at": "2026-10-31T02:12:09+00:00"
     },
     {
       "country": "TH",
       "niche": "storage",
       "title": "กล่องเก็บอาหาร",
       "product_ref": "4f5096449c",
-      "price": 316.0,
+      "price": 283.0,
       "currency": "THB",
       "rating": null,
       "sold_raw": "0",
@@ -1644,57 +1731,42 @@
       "increment7_proxy": null,
       "url": "https://shop.tiktok.com/th/pdp/klong-ekb-oahar-khnad-1000ml-phlit-chak-wasdu-khawsali-thad-saetnels-2-chong-sil-yang-kan-oahar-hk/1729563241261140981",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:13:36+00:00"
+      "observed_at": "2026-10-31T02:12:18+00:00"
+    },
+    {
+      "country": "TH",
+      "niche": "kitchen",
+      "title": "ชุดครัวของเล่น 36 ชิ้น พร้อมเตาแม่เหล็กและอุปกรณ์ทำอาหาร ของเล่นบทบาทสมมติ สนุกเรียนรู้ พัฒนาการเด็ก วัสดุปลอดภัย ของขวัญเพื่อการเรียนรู้ ขนาด 30x20x15 ซม. สะดวกพกพา มาตราเลข 123456789",
+      "product_ref": "1dce0b3bf0",
+      "price": 365.7,
+      "currency": "THB",
+      "rating": null,
+      "sold_raw": "0",
+      "sold_precision": "exact",
+      "increment7_proxy": null,
+      "url": "https://shop.tiktok.com/th/pdp/chud-khraw-khongeln-36-chin-eta-aemehlk-aela-oupkrn-thamoahar-khongeln-bthbath-smmti-phathnakar-edk-wasdu-plodphay-khnad-30x20x15-sm-sadwk-phkpha/1734413689915082628",
+      "source": "coregent/tiktok-shop-product-scraper",
+      "observed_at": "2026-10-31T02:12:25+00:00"
     },
     {
       "country": "VN",
-      "niche": "kitchen",
-      "title": "￼Dụng cụ nhà bếp bộ 5 món nạo, gọt, dao, kéo, đánh trứng, mở nút chai",
-      "product_ref": "d65102225e",
-      "price": 105073.0,
+      "niche": "pets",
+      "title": "Sét kẹp hello kitty dễ thương",
+      "product_ref": "ebf413d66b",
+      "price": 17708.0,
       "currency": "VND",
       "rating": null,
       "sold_raw": "0",
       "sold_precision": "exact",
       "increment7_proxy": null,
-      "url": "https://shop.tiktok.com/vn/pdp/bo-dung-cu-nha-bep-5-mon-got-nao-thuc-pham-dao-keo-da-nang/1732460566585181974",
+      "url": "https://shop.tiktok.com/vn/pdp/set-kep-toc-hello-kitty-de-thuong-thiet-ke-xinh-xan-tien-dung-hang-ngay/1732116815593571756",
       "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:14:08+00:00"
-    },
-    {
-      "country": "VN",
-      "niche": "kitchen",
-      "title": "Dung cụ làm bếp kéo nhíp xe xiêu béng",
-      "product_ref": "1c50f4b051",
-      "price": 128685.0,
-      "currency": "VND",
-      "rating": null,
-      "sold_raw": "25",
-      "sold_precision": "exact",
-      "increment7_proxy": null,
-      "url": "https://shop.tiktok.com/vn/pdp/combos-3-da-nang-cat-vai-quan-ao-nhieu-cong-dung/1734236157642442666",
-      "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:14:08+00:00"
-    },
-    {
-      "country": "VN",
-      "niche": "pets",
-      "title": "phụ kiện gắn nón bảo hiểm ( tai mèo, tai chuột,tai gấu tai cáo )",
-      "product_ref": "b89b1261cb",
-      "price": 26307.0,
-      "currency": "VND",
-      "rating": 4.9,
-      "sold_raw": "720",
-      "sold_precision": "exact",
-      "increment7_proxy": null,
-      "url": "https://shop.tiktok.com/vn/pdp/phu-kien-gan-non-bao-hiem-tai-meo-tai-chuot-tai-gau-tai-cao/1729645573891918367",
-      "source": "coregent/tiktok-shop-product-scraper",
-      "observed_at": "2026-10-30T02:14:18+00:00"
+      "observed_at": "2026-10-31T02:13:00+00:00"
     }
   ],
   "attempt": {
-    "attempted_at": "2026-10-30T02:13:05+00:00",
-    "scheduled_for": "2026-10-30T09:23:00+08:00",
+    "attempted_at": "2026-10-31T02:11:46+00:00",
+    "scheduled_for": "2026-10-31T09:23:00+08:00",
     "trigger": "schedule",
     "state": "ok",
     "countries": {
@@ -1777,15 +1849,15 @@
       }
     ],
     "budget": {
-      "reserved_rows": 405,
-      "reserved_usd": 1.89
+      "reserved_rows": 432,
+      "reserved_usd": 2.016
     }
   },
   "evaluation": {
     "state": "history_accumulating",
     "synthetic": false,
-    "observation_dates": 15,
-    "mature_labels": 18,
+    "observation_dates": 16,
+    "mature_labels": 38,
     "minimum_dates": 84,
     "minimum_labels": 500,
     "target": "Next 7-day displayed sold-counter increment"
@@ -1826,9 +1898,10 @@
       "2026-10-27",
       "2026-10-28",
       "2026-10-29",
-      "2026-10-30"
+      "2026-10-30",
+      "2026-10-31"
     ],
-    "maximum_consecutive_scheduled_days": 14,
+    "maximum_consecutive_scheduled_days": 15,
     "unattended_acceptance_verified": true,
     "required_scheduled_dates": 3
   }
