@@ -1,10 +1,10 @@
 country,country_name,niche,label,as_of_date,sample_products,unique_products_28d,observed_dates_28d,sample_sellers,seller_coverage,seller_hhi,competition_proxy,matched_products,increment7_proxy,growth7,median_price,currency,confidence
-MY,Malaysia,storage,Home storage,2026-11-01,3,3,17,3,1.0,0.3333333333333333,1.0,3,0.0,,4.0,MYR,low
-MY,Malaysia,kitchen,Kitchen tools,2026-11-01,3,6,17,3,1.0,0.3333333333333333,1.0,0,,,2.2,MYR,low
-MY,Malaysia,pets,Pet accessories,2026-11-01,3,8,17,3,1.0,0.3333333333333333,1.0,1,0.0,,9.46,MYR,low
-TH,Thailand,storage,Home storage,2026-11-01,3,4,17,3,1.0,0.3333333333333333,1.0,2,0.0,,298.91,THB,low
-TH,Thailand,kitchen,Kitchen tools,2026-11-01,3,8,17,3,1.0,0.3333333333333333,1.0,2,0.0,,148.3,THB,low
-TH,Thailand,pets,Pet accessories,2026-11-01,3,3,17,3,1.0,0.3333333333333333,1.0,3,0.0,,89.0,THB,low
-VN,Vietnam,storage,Home storage,2026-11-01,3,3,17,3,1.0,0.3333333333333333,1.0,3,0.0,-1.0,55112.0,VND,low
-VN,Vietnam,kitchen,Kitchen tools,2026-11-01,3,6,17,2,1.0,0.5555555555555556,0.6666666666666666,2,0.0,,53550.0,VND,low
-VN,Vietnam,pets,Pet accessories,2026-11-01,3,9,17,3,1.0,0.3333333333333333,1.0,1,4.0,1.0,27540.0,VND,low
+MY,Malaysia,storage,Home storage,2026-11-02,3,3,18,3,1.0,0.3333333333333333,1.0,3,0.0,,3.11,MYR,low
+MY,Malaysia,kitchen,Kitchen tools,2026-11-02,3,7,18,3,1.0,0.3333333333333333,1.0,1,0.0,,2.65,MYR,low
+MY,Malaysia,pets,Pet accessories,2026-11-02,3,8,18,3,1.0,0.3333333333333333,1.0,1,1.0,-0.6666666666666667,9.44,MYR,low
+TH,Thailand,storage,Home storage,2026-11-02,3,5,18,3,1.0,0.3333333333333333,1.0,2,0.0,,104.0,THB,low
+TH,Thailand,kitchen,Kitchen tools,2026-11-02,3,8,18,3,1.0,0.3333333333333333,1.0,1,0.0,,138.6,THB,low
+TH,Thailand,pets,Pet accessories,2026-11-02,3,3,18,3,1.0,0.3333333333333333,1.0,3,0.0,,90.0,THB,low
+VN,Vietnam,storage,Home storage,2026-11-02,3,3,18,3,1.0,0.3333333333333333,1.0,3,0.0,-1.0,55278.0,VND,low
+VN,Vietnam,kitchen,Kitchen tools,2026-11-02,3,6,18,2,1.0,0.5555555555555556,0.6666666666666666,1,0.0,,52658.0,VND,low
+VN,Vietnam,pets,Pet accessories,2026-11-02,3,10,18,3,1.0,0.3333333333333333,1.0,0,,,27497.0,VND,low
