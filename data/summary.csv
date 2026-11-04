@@ -1,10 +1,10 @@
 country,country_name,niche,label,as_of_date,sample_products,unique_products_28d,observed_dates_28d,sample_sellers,seller_coverage,seller_hhi,competition_proxy,matched_products,increment7_proxy,growth7,median_price,currency,confidence
-MY,Malaysia,storage,Home storage,2026-11-03,3,3,19,3,1.0,0.3333333333333333,1.0,3,0.0,,3.37,MYR,low
-MY,Malaysia,kitchen,Kitchen tools,2026-11-03,3,8,19,3,1.0,0.3333333333333333,1.0,1,0.0,,2.66,MYR,low
-MY,Malaysia,pets,Pet accessories,2026-11-03,3,8,19,3,1.0,0.3333333333333333,1.0,2,1.0,-0.5,9.72,MYR,low
-TH,Thailand,storage,Home storage,2026-11-03,3,5,19,3,1.0,0.3333333333333333,1.0,2,0.0,,99.0,THB,low
-TH,Thailand,kitchen,Kitchen tools,2026-11-03,3,8,19,3,1.0,0.3333333333333333,1.0,1,0.0,,154.7,THB,low
-TH,Thailand,pets,Pet accessories,2026-11-03,3,3,19,3,1.0,0.3333333333333333,1.0,3,0.0,,85.0,THB,low
-VN,Vietnam,storage,Home storage,2026-11-03,3,3,19,3,1.0,0.3333333333333333,1.0,3,0.0,-1.0,56167.0,VND,low
-VN,Vietnam,kitchen,Kitchen tools,2026-11-03,3,6,19,3,1.0,0.3333333333333333,1.0,1,0.0,,128307.0,VND,low
-VN,Vietnam,pets,Pet accessories,2026-11-03,3,10,19,3,1.0,0.3333333333333333,1.0,1,4.0,1.0,41022.0,VND,low
+MY,Malaysia,storage,Home storage,2026-11-04,3,6,20,3,1.0,0.3333333333333333,1.0,0,,,9.09,MYR,low
+MY,Malaysia,kitchen,Kitchen tools,2026-11-04,3,11,20,3,1.0,0.3333333333333333,1.0,0,,,33.11,MYR,low
+MY,Malaysia,pets,Pet accessories,2026-11-04,3,11,20,2,1.0,0.5555555555555556,0.6666666666666666,0,,,4.6,MYR,low
+TH,Thailand,storage,Home storage,2026-11-04,3,8,20,3,1.0,0.3333333333333333,1.0,0,,,53.0,THB,low
+TH,Thailand,kitchen,Kitchen tools,2026-11-04,3,11,20,3,1.0,0.3333333333333333,1.0,0,,,35.0,THB,low
+TH,Thailand,pets,Pet accessories,2026-11-04,3,6,20,3,1.0,0.3333333333333333,1.0,0,,,110.0,THB,low
+VN,Vietnam,storage,Home storage,2026-11-04,3,6,20,2,1.0,0.5555555555555556,0.6666666666666666,0,,,53183.0,VND,low
+VN,Vietnam,kitchen,Kitchen tools,2026-11-04,3,9,20,3,1.0,0.3333333333333333,1.0,0,,,45763.0,VND,low
+VN,Vietnam,pets,Pet accessories,2026-11-04,3,13,20,3,1.0,0.3333333333333333,1.0,0,,,18299.0,VND,low
