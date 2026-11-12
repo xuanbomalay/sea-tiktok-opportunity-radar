@@ -1,10 +1,10 @@
 country,country_name,niche,label,as_of_date,sample_products,unique_products_28d,observed_dates_28d,sample_sellers,seller_coverage,seller_hhi,competition_proxy,matched_products,increment7_proxy,growth7,median_price,currency,confidence
-MY,Malaysia,storage,Home storage,2026-11-11,3,20,27,3,1.0,0.3333333333333333,1.0,0,,,7.6,MYR,low
-MY,Malaysia,kitchen,Kitchen tools,2026-11-11,3,18,27,3,1.0,0.3333333333333333,1.0,0,,,9.8,MYR,low
-MY,Malaysia,pets,Pet accessories,2026-11-11,3,16,27,2,1.0,0.5555555555555556,0.6666666666666666,0,,,11.83,MYR,low
-TH,Thailand,storage,Home storage,2026-11-11,3,20,27,3,1.0,0.3333333333333333,1.0,0,,,107.8,THB,low
-TH,Thailand,kitchen,Kitchen tools,2026-11-11,3,24,27,3,1.0,0.3333333333333333,1.0,0,,,47.0,THB,low
-TH,Thailand,pets,Pet accessories,2026-11-11,3,21,27,3,1.0,0.3333333333333333,1.0,0,,,114.74,THB,low
-VN,Vietnam,storage,Home storage,2026-11-11,3,24,27,3,1.0,0.3333333333333333,1.0,0,,,27057.0,VND,low
-VN,Vietnam,kitchen,Kitchen tools,2026-11-11,3,21,27,3,1.0,0.3333333333333333,1.0,0,,,32921.0,VND,low
-VN,Vietnam,pets,Pet accessories,2026-11-11,3,22,27,2,1.0,0.5555555555555556,0.6666666666666666,0,,,28314.0,VND,low
+MY,Malaysia,storage,Home storage,2026-11-12,3,23,28,3,1.0,0.3333333333333333,1.0,0,,,9.06,MYR,low
+MY,Malaysia,kitchen,Kitchen tools,2026-11-12,3,21,28,3,1.0,0.3333333333333333,1.0,0,,,35.8,MYR,low
+MY,Malaysia,pets,Pet accessories,2026-11-12,3,18,28,3,1.0,0.3333333333333333,1.0,0,,,3.0,MYR,low
+TH,Thailand,storage,Home storage,2026-11-12,3,23,28,3,1.0,0.3333333333333333,1.0,0,,,73.0,THB,low
+TH,Thailand,kitchen,Kitchen tools,2026-11-12,3,27,28,3,1.0,0.3333333333333333,1.0,0,,,124.75,THB,low
+TH,Thailand,pets,Pet accessories,2026-11-12,3,23,28,3,1.0,0.3333333333333333,1.0,0,,,65.0,THB,low
+VN,Vietnam,storage,Home storage,2026-11-12,3,26,28,3,1.0,0.3333333333333333,1.0,0,,,32596.0,VND,low
+VN,Vietnam,kitchen,Kitchen tools,2026-11-12,3,23,28,1,1.0,1.0,0.3333333333333333,0,,,40163.0,VND,low
+VN,Vietnam,pets,Pet accessories,2026-11-12,3,24,28,3,1.0,0.3333333333333333,1.0,0,,,23360.0,VND,low
