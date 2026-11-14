@@ -1,10 +1,10 @@
 country,country_name,niche,label,as_of_date,sample_products,unique_products_28d,observed_dates_28d,sample_sellers,seller_coverage,seller_hhi,competition_proxy,matched_products,increment7_proxy,growth7,median_price,currency,confidence
-MY,Malaysia,storage,Home storage,2026-11-13,3,25,28,3,1.0,0.3333333333333333,1.0,0,,,4.9,MYR,low
-MY,Malaysia,kitchen,Kitchen tools,2026-11-13,3,23,28,3,1.0,0.3333333333333333,1.0,0,,,6.66,MYR,low
-MY,Malaysia,pets,Pet accessories,2026-11-13,3,19,28,3,1.0,0.3333333333333333,1.0,0,,,5.52,MYR,low
-TH,Thailand,storage,Home storage,2026-11-13,3,26,28,2,1.0,0.5555555555555556,0.6666666666666666,0,,,51.98,THB,low
-TH,Thailand,kitchen,Kitchen tools,2026-11-13,3,28,28,3,1.0,0.3333333333333333,1.0,0,,,159.0,THB,low
-TH,Thailand,pets,Pet accessories,2026-11-13,3,25,28,3,1.0,0.3333333333333333,1.0,0,,,71.0,THB,low
-VN,Vietnam,storage,Home storage,2026-11-13,3,27,28,3,1.0,0.3333333333333333,1.0,0,,,32076.0,VND,low
-VN,Vietnam,kitchen,Kitchen tools,2026-11-13,3,25,28,2,1.0,0.5555555555555556,0.6666666666666666,0,,,41577.0,VND,low
-VN,Vietnam,pets,Pet accessories,2026-11-13,3,25,28,3,1.0,0.3333333333333333,1.0,0,,,26693.0,VND,low
+MY,Malaysia,storage,Home storage,2026-11-14,3,27,28,3,1.0,0.3333333333333333,1.0,0,,,5.1,MYR,low
+MY,Malaysia,kitchen,Kitchen tools,2026-11-14,3,24,28,3,1.0,0.3333333333333333,1.0,0,,,29.6,MYR,low
+MY,Malaysia,pets,Pet accessories,2026-11-14,3,21,28,3,1.0,0.3333333333333333,1.0,0,,,7.18,MYR,low
+TH,Thailand,storage,Home storage,2026-11-14,3,28,28,2,1.0,0.5555555555555556,0.6666666666666666,0,,,53.49,THB,low
+TH,Thailand,kitchen,Kitchen tools,2026-11-14,3,30,28,3,1.0,0.3333333333333333,1.0,0,,,75.11,THB,low
+TH,Thailand,pets,Pet accessories,2026-11-14,3,27,28,3,1.0,0.3333333333333333,1.0,0,,,84.0,THB,low
+VN,Vietnam,storage,Home storage,2026-11-14,3,29,28,2,1.0,0.5555555555555556,0.6666666666666666,0,,,46337.0,VND,low
+VN,Vietnam,kitchen,Kitchen tools,2026-11-14,3,27,28,3,1.0,0.3333333333333333,1.0,0,,,41628.0,VND,low
+VN,Vietnam,pets,Pet accessories,2026-11-14,3,25,28,2,1.0,0.5555555555555556,0.6666666666666666,0,,,22044.0,VND,low
